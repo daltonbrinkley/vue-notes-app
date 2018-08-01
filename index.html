@@ -18,10 +18,9 @@
       <div class="note-selectors">
         <div class="note-selector" v-for="note in transformedNotes">
           <p class="note-selector-title">
-            {{ formatTitle(note.body) }}
-          </p>
+            {{ note.body | formatTitle }}</p>
           <p class="note-selector-timestamp">
-            {{ formatTimestamp(note.timestamp) }}
+            {{ note.timestamp | formatTimestamp }}
           </p>
         </div>
       </div>

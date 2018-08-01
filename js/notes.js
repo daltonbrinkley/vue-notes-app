@@ -14,7 +14,7 @@ var app = new Vue({
       });
     }
   },
-  methods: {
+  filters: {
     formatTitle: function(body) {
       var maxLength = 20;
       if (body.length > maxLength) {
@@ -28,5 +28,7 @@ var app = new Vue({
     formatTimestamp: function(timestamp) {
       return new Date(timestamp).toUTCString();
     }
+  },
+  methods: {
   }
 });
